@@ -1,14 +1,14 @@
-# 🍕 Pizza System: Legacy to Clean Architecture Refactoring
+#  Pizza System: Legacy to Clean Architecture Refactoring
 
 This project demonstrates the **modernization and refactoring** of a legacy monolithic application into a scalable, pattern-based architecture. 
 
 It serves as a technical case study on **Software Architecture**, **Design Patterns**, and **Technical Debt reduction**.
 
-## 📂 Project Structure
+## Project Structure
 
 The repository is divided into two versions to showcase the evolution of the software:
 
-### 1. 🧱 `v1-legacy-monolith` (Before)
+### 1.  `v1-legacy-monolith` (Before)
 * **State:** The original legacy system.
 * **Characteristics:**
     * **Monolithic Class Design:** Logic, UI, and Data Access mixed in single classes.
@@ -16,7 +16,7 @@ The repository is divided into two versions to showcase the evolution of the sof
     * **No Separation of Concerns:** Hard to maintain and test.
     * **Tech Stack:** JavaFX (FXML) with direct `.txt` file manipulation.
 
-### 2. 💎 `v2-clean-architecture` (After - Current)
+### 2.  `v2-clean-architecture` (After - Current)
 * **State:** Refactored version applying **SOLID principles**.
 * **Architecture:** Layered Architecture (Presentation → Service Layer → Domain Model → Persistence).
 * **Key Improvements:**
@@ -29,14 +29,14 @@ We transitioned from procedural code to Object-Oriented Design Patterns:
 
 | Pattern | Usage in Project |
 | :--- | :--- |
-| **🏗 Builder** | `PizzaPersonalizadaBuilder` creates complex Pizza objects step-by-step (dough, sauce, toppings). |
-| **👀 Observer** | `PanelControlEmpleado` and `PantallaEstadoCliente` automatically update when the Order state changes. |
-| **🚦 State** | `EstadoPedido` interface manages the order lifecycle (Received → Prep → Baking → Delivered), eliminating complex `if/else` chains. |
-| **♟ Strategy** | `EstrategiaPrecio` allows switching between `PrecioEstandar` and `PrecioPromocion` dynamically. |
-| **🛡 Facade** | `ServicioPedidos` provides a simple interface for the UI, hiding the complexity of the domain model. |
-| **💍 Singleton** | `GestorPedidos` ensures a single global instance manages the in-memory order queue. |
+| ** Builder** | `PizzaPersonalizadaBuilder` creates complex Pizza objects step-by-step (dough, sauce, toppings). |
+| ** Observer** | `PanelControlEmpleado` and `PantallaEstadoCliente` automatically update when the Order state changes. |
+| ** State** | `EstadoPedido` interface manages the order lifecycle (Received → Prep → Baking → Delivered), eliminating complex `if/else` chains. |
+| ** Strategy** | `EstrategiaPrecio` allows switching between `PrecioEstandar` and `PrecioPromocion` dynamically. |
+| ** Facade** | `ServicioPedidos` provides a simple interface for the UI, hiding the complexity of the domain model. |
+| ** Singleton** | `GestorPedidos` ensures a single global instance manages the in-memory order queue. |
 
-## 🚀 How to Run
+##  How to Run
 
 1.  Clone the repository.
 2.  Open **v2-clean-architecture** in NetBeans or IntelliJ.
